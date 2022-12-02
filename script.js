@@ -23,6 +23,7 @@ function creaList(Infovalue){
     infoList.appendChild(liste);
 }
 
+//exo4
 function suppr(){
     console.log(infoList.childNodes[1].innerHTML)
     while(infoList.childNodes.length > 1){
@@ -31,6 +32,7 @@ function suppr(){
     console.log(infoList.childNodes)
 }
 
+//exo5
 function trie(){
 
     let trier = [];
@@ -40,8 +42,7 @@ function trie(){
     trier.sort()
     console.log(trier)
     suppr();
-
-    for(let i = 0; i < trier; i++){
+    for(let i = 0; i < trier.length; i++){
         creaList(trier[i])
     }
 }
